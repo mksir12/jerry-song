@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Hayasaka",
+    "name": "Musio",
     "description": "Music streaming and downloading platform.",
-    "short_name": "Hayasaka",
+    "short_name": "Musio",
     "icons": [
         {
             "src": "/icon-192x192.png",
