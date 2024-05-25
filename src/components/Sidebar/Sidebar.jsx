@@ -59,13 +59,12 @@ const Sidebar = ({ showNav, setShowNav }) => {
           </p>
         </Link>
         <a
-          href="https://github.com/himanshu8443/hayasaka"
+          href="https://t.me/MODSMAVI"
           target="_blank"
           rel="noreferrer"
         >
           <p className=" hover:border border-gray-200 p-1 font-medium w-fit rounded cursor-pointer text-sm flex items-center gap-1">
-            <FaGithub />
-            Github
+            Telegram
           </p>
         </a>
       </div>
