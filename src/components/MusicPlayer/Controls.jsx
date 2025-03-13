@@ -35,7 +35,7 @@ const Controls = ({
         <TbRepeat
           title="Repeat"
           size={25}
-          color={"#FF0000"}
+          color={"white"}
           onClick={(e) => {
             e.stopPropagation();
             setRepeat((prev) => !prev);
@@ -106,8 +106,8 @@ const Controls = ({
         <div className=" hidden sm:block mt-1 ">
           <Downloader activeSong={activeSong} fullScreen={fullScreen} />
         </div>
-      <button onClick={() => setShow(false)} className='text-green text-lg font-semibold'>X</button>
       )}
+      <button onClick={() => setShow(false)} className='text-green text-lg font-semibold'>X</button>
     </div>
   );
 };
