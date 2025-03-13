@@ -39,6 +39,15 @@ const playerSlice = createSlice({
       }
     },
 
+    prevSong: (state, action) => {
+
+      if(state.currentSongs.length>0){
+      state.activeSong = state.currentSongs[action.payload];
+      state.currentIndex = action.payload;
+      state.isActive = true;
+      }
+    },
+
     playPause: (state, action) => {
       state.isPlaying = action.payload;
     },
