@@ -35,7 +35,7 @@ const Controls = ({
         <TbRepeat
           title="Repeat"
           size={25}
-          color={"green"}
+          color={"#FF0000"}
           onClick={(e) => {
             e.stopPropagation();
             setRepeat((prev) => !prev);
@@ -92,7 +92,6 @@ const Controls = ({
           onClick={handleNextSong}
         />
       }
-      <button onClick={() => setShow(false)} className='text-pink text-lg font-semibold'>X</button>
       <TbArrowsShuffle
         title="Shuffle"
         size={25}
@@ -107,6 +106,7 @@ const Controls = ({
         <div className=" hidden sm:block mt-1 ">
           <Downloader activeSong={activeSong} fullScreen={fullScreen} />
         </div>
+      <button onClick={() => setShow(false)} className='text-green text-lg font-semibold'>X</button>
       )}
     </div>
   );
