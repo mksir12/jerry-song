@@ -92,6 +92,7 @@ const Controls = ({
           onClick={handleNextSong}
         />
       }
+      <button onClick={() => setShow(false)} className='text-pink text-lg font-semibold'>X</button>
       <TbArrowsShuffle
         title="Shuffle"
         size={25}
