@@ -21,9 +21,17 @@ const Controls = ({
   handleAddToFavourite,
   favouriteSongs,
   loading,
+  setShow, // Added setShow prop to handle closing
 }) => {
   return (
-    <div className="flex items-center justify-around md:w-80 text-lg lg:w-80 2xl:w-80 gap-4 sm:gap-0">
+    <div className="flex items-center justify-around md:w-80 text-lg lg:w-80 2xl:w-80 gap-4 sm:gap-0 relative">
+      <button
+        onClick={() => setShow(false)}
+        className="absolute -top-4 -right-4 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm"
+      >
+        X
+      </button>
+      
       <FavouriteButton
         favouriteSongs={favouriteSongs}
         activeSong={activeSong}
@@ -31,6 +39,7 @@ const Controls = ({
         handleAddToFavourite={handleAddToFavourite}
         style={" sm:block hidden"}
       />
+
       {!repeat ? (
         <TbRepeat
           title="Repeat"
@@ -59,15 +68,14 @@ const Controls = ({
         />
       )}
 
-      {
-        <MdSkipPrevious
-          title="Previous"
-          size={35}
-          color={currentSongs?.length ? "#ffff" : "#b3b3b3"}
-          className="cursor-pointer"
-          onClick={handlePrevSong}
-        />
-      }
+      <MdSkipPrevious
+        title="Previous"
+        size={35}
+        color={currentSongs?.length ? "#ffff" : "#b3b3b3"}
+        className="cursor-pointer"
+        onClick={handlePrevSong}
+      />
+
       {isPlaying ? (
         <BsFillPauseFill
           size={45}
@@ -83,15 +91,15 @@ const Controls = ({
           className="cursor-pointer"
         />
       )}
-      {
-        <MdSkipNext
-          title="Next"
-          size={35}
-          color={currentSongs?.length ? "#ffff" : "#b3b3b3"}
-          className="cursor-pointer"
-          onClick={handleNextSong}
-        />
-      }
+
+      <MdSkipNext
+        title="Next"
+        size={35}
+        color={currentSongs?.length ? "#ffff" : "#b3b3b3"}
+        className="cursor-pointer"
+        onClick={handleNextSong}
+      />
+
       <TbArrowsShuffle
         title="Shuffle"
         size={25}
@@ -102,14 +110,15 @@ const Controls = ({
         }}
         className={`${!fullScreen ? "hidden sm:block" : "m-3"} cursor-pointer`}
       />
+
       {activeSong?.downloadUrl?.[4]?.url && (
-        <div className=" hidden sm:block mt-1 ">
+        <div className="hidden sm:block mt-1">
           <Downloader activeSong={activeSong} fullScreen={fullScreen} />
         </div>
       )}
-      <button onClick={() => setShow(false)} className='text-green text-lg font-semibold'>X</button>
     </div>
   );
 };
 
 export default Controls;
+
