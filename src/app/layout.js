@@ -17,14 +17,14 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Jerry Song",
+  title: "jerry-song",
   description: "Music streaming app",
   image:
     "https://res.cloudinary.com/ddhg99aub/image/upload/v1716643815/b0qaj44bpeio6declavp.png",
   url: "https://jerry-song.vercel.app",
   type: "website",
   icons: [{ rel: "icon", url: Favicon.src }],
-  site_name: "Jerry Song",
+  site_name: "jerry-song",
   manifest: "/manifest.json",
 };
 
