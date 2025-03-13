@@ -35,7 +35,7 @@ const Controls = ({
         <TbRepeat
           title="Repeat"
           size={25}
-          color={"white"}
+          color={"green"}
           onClick={(e) => {
             e.stopPropagation();
             setRepeat((prev) => !prev);
