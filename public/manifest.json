@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Jerry Song",
+    "name": "jerry-song",
     "description": "Music streaming and downloading platform.",
-    "short_name": "Jerry Song",
+    "short_name": "jerry-song",
     "icons": [
         {
             "src": "/icon-192x192.png",
