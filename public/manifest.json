@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Musio",
+    "name": "Jerry Song",
     "description": "Music streaming and downloading platform.",
-    "short_name": "Musio",
+    "short_name": "Jerry Song",
     "icons": [
         {
             "src": "/icon-192x192.png",
