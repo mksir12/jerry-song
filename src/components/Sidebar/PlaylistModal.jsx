@@ -58,7 +58,7 @@ const PlaylistModal = ({ show, setShow }) => {
                     <div className='flex flex-col justify-center items-center'>
                         <div className=" flex gap-4 items-end mb-3">
                             <label className=" mr-9 lg:mr-11" htmlFor='name'>Name</label>
-                            <input onFocus={handleFocus} onBlur={handleBlur} onChange={handleChange} value={name} name='name' type="text" placeholder="Playlist Name" required className=' appearance-none bg-blu/5 bg-opacity-100 backdrop-blur-sm border-b border-white focus:outline-none text-base lg:text-lg' />
+                            <input onFocus={handleFocus} onBlur={handleBlur} onChange={handleChange} value={name} name='name' type="text" placeholder="Playlist Name" required className=' appearance-none bg-blue/5 bg-opacity-100 backdrop-blur-sm border-b border-white focus:outline-none text-base lg:text-lg' />
                         </div>
                             <button onClick={handelCreate} className='text-sm group font-semibold mb-7 flex gap-2 border-[1.5px] border-white rounded-lg px-2 items-center py-2'>
                                 {
